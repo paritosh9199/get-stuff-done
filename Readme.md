@@ -1,29 +1,43 @@
-# TODO-APP
+# Just-Do-It
       
 Installation:  
-&nbsp;&nbsp;&nbsp;&nbsp;`npm install -g `  
-&nbsp;&nbsp;&nbsp;&nbsp;
-This is a Simple todo app written for devs!  
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;` npm install -g just-do-it` <br/>
+<br/>
+A Simple CLI based todo app without any distractions for devs!
+<br/>
 Usage:  
-&nbsp;&nbsp;&nbsp;&nbsp;`todo <Action> <Task>`
-&nbsp;&nbsp;&nbsp;&nbsp;
-`<Task>` is a task string.
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;`do <Action> <Task>`<br/>
+<br/>
+`<Task>` is a task string.<br/>
+<br/>
 `<Action>` args:  
-<pre>&nbsp;&nbsp;
-    -a  : Add a task <task>  
-          "add", "-a"  
-    -c  : Mark <task> as complete with <task number>.  
-          "check", "-c"  
-    -d  : Delete <task> with <task number>.  
-          "delete", "-d"  
-    -l  : List all tasks.  
-          "list","list-all", "-la", "-l"  
-    -lc : List all completed tasks.  
-          "completed", "list-completed", "-lc"  
-    -lp : List all pending tasks.  
-          "list-pending", "-lp"  
-    -h  : Toggle help.  
-          "help", "-h"  
-</pre>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-a  : Add a task <task>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"--add", "-a"`  
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-c  : Mark/Unmark `<task>` as complete/pending with `<task number>`.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"--check", "-c"`  
+<br/>  
+&nbsp;&nbsp;&nbsp;&nbsp;-l  : List all tasks.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"--list","--list-all", "-la", "-l"`  
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-lc : List all completed tasks.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"--completed", "--list-completed", "-lc"`  
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-lp : List all pending tasks.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"--list-pending", "-lp"`  
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-d  : Delete `<task>` with `<task number>`.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"--delete", "-d"`  
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-d  : Delete all `<task>`.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"--delete-all", "-da"`  
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-d  : Delete all completed `<task>`.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"--delete-completed", "-dc"`  
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-d  : Delete all pending `<task>`.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"--delete-pending", "-dp"`  
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-h  : Toggle help.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"--help", "-h"`  

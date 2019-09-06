@@ -1,28 +1,41 @@
 {
-  "name": "todoer",
-  "version": "1.0.0",
-  "description": "A simple todo app!",
-  "main": "app.js",
+  "name": "get-stuff-done",
+  "version": "1.0.1",
+  "description": "A simple CLI based todo app for developers without any distractions!",
+  "files": [
+    "bin"
+  ],
+  "bin": {
+    "do": "./bin/app.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Paritosh",
   "license": "MIT",
   "dependencies": {
-    "fs": "0.0.1-security"
+    "clear": "^0.1.0",
+    "fs": "0.0.1-security",
+    "log-symbols": "^3.0.0"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paritosh9199/node-todo-app.git"
+    "url": "git+https://github.com/paritosh9199/get-stuff-done.git"
   },
   "keywords": [
+    "todo",
+    "task",
+    "list",
+    "todoer",
+    "do it",
+    "get stuff done",
     "Todo",
     "TodoApp",
     "Todo-App"
   ],
   "bugs": {
-    "url": "https://github.com/paritosh9199/node-todo-app/issues"
+    "url": "https://github.com/paritosh9199/get-stuff-done/issues"
   },
-  "homepage": "https://github.com/paritosh9199/node-todo-app#readme"
+  "homepage": "https://github.com/paritosh9199/get-stuff-done#readme"
 }
