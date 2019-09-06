@@ -1,4 +1,4 @@
-# Just-Do-It
+# Get Stuff Done
       
 Installation:  
 &nbsp;&nbsp;&nbsp;&nbsp;` npm install -g just-do-it` <br/>
