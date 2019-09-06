@@ -1,13 +1,13 @@
 # TODO-APP
-    
-Installation:
-    `npm install -g `
-
-This is a Simple todo app written for devs!
-
-Usage:
+      
+Installation:  
+    `npm install -g `  
+  
+This is a Simple todo app written for devs!  
+  
+Usage:  
     `todo <Action> <Task>`
-    
+      
 `<Task>` is a task string.
 
 `<Action>` args:  
