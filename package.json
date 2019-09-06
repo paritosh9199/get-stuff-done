@@ -3,10 +3,12 @@
   "version": "1.0.1",
   "description": "A simple CLI based todo app for developers without any distractions!",
   "files": [
-    "bin"
+    "bin",
+    "lib"
   ],
+  "main": "./bin/do.js",
   "bin": {
-    "do": "./bin/app.js"
+    "do": "./bin/do.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

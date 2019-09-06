@@ -1,7 +1,7 @@
 # Get Stuff Done
       
 Installation:  
-&nbsp;&nbsp;&nbsp;&nbsp;` npm install -g just-do-it` <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;` npm install -g get-stuff-done` <br/>
 <br/>
 A Simple CLI based todo app without any distractions for devs!
 <br/>
