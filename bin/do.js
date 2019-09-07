@@ -5,12 +5,12 @@ var clear = require('clear');
 var { Color, Highlight, Format } = require('../lib/colors.js');
 
 //constants
-var TASK_JSON_PATH = "./db.json";
+var DATABASE_PATH = "./db.json";
 
 
 function init() {
     //create file if it's present.
-    if (!fs.existsSync(TASK_JSON_PATH)) {
+    if (!fs.existsSync(DATABASE_PATH)) {
         console.log(`${Color.yellow}Initialising storage.\n Creating ${Color.green}"db.json"${Color.yellow} file${Color.reset}`);
         setData([]);
     }
@@ -26,7 +26,7 @@ function printSuccess(success) {
 
 function getData() {
     //read file contents
-    var contents = fs.readFileSync(TASK_JSON_PATH);
+    var contents = fs.readFileSync(DATABASE_PATH);
 
     //parse contents
     var data = JSON.parse(contents);
@@ -40,7 +40,7 @@ function setData(data) {
     var dataString = JSON.stringify(data);
 
     //write to  file
-    fs.writeFileSync(TASK_JSON_PATH, dataString);
+    fs.writeFileSync(DATABASE_PATH, dataString);
 }
 
 //display usage
@@ -183,21 +183,33 @@ function reOrder(data) {
 function list(all = 1) {
 
     var data = getData();
+    var spaces = " ";
+
+    if (data.length >= 10 && data.length < 100)
+        spaces = "  "
+    else if (data.length >= 100 && data.length < 1000)
+        spaces = "   "
+
     if (data.length > 0) {
         //print the list. using ANSI colors and formating
+
         console.log(`${Color.skyblue}${Format.bold}${Format.underline}Task list:${Format.reset}${Color.yellow}`);
+        var s = spaces;
         data.forEach(function (task, index) {
+            if ((index + 1) / 10 == 1 || (index + 1) / 10 == 10 || (index + 1) / 10 == 100)
+                s = s.slice(1)
+
             if (all == 1) {
-                console.log(task.id + ".", " [" + (task.completed ? `${Color.green}${symbol.success}${Color.yellow}` : " ") + "] ", task.task);
+                console.log(`${Color.blue} ` + task.id + "." + `${s}${Color.purple}` + "[" + (task.completed ? `${Color.green}${symbol.success}${Color.yellow}` : " ") + `${Color.purple}] ${Color.yellow}`, task.task);
             } else if (all == 2) {
                 //only completed ones
                 if (task.completed)
-                    console.log(task.id + ".", " [" + (task.completed ? `${Color.green}${symbol.success}${Color.yellow}` : " ") + "] ", task.task);
+                    console.log(`${Color.blue} ` + task.id + "." + `${s}${Color.purple}` + "[" + (task.completed ? `${Color.green}${symbol.success}${Color.yellow}` : " ") + `${Color.purple}] ${Color.yellow}`, task.task);
             } else {
                 //remaining
                 //✓
                 if (!task.completed)
-                    console.log(task.id + ".", " [" + (task.completed ? `${Color.green}${symbol.success}${Color.yellow}` : " ") + "] ", task.task);
+                    console.log(`${Color.blue} ` + task.id + "." + `${s}${Color.purple}` + "[" + (task.completed ? `${Color.green}${symbol.success}${Color.yellow}` : " ") + `${Color.purple}] ${Color.yellow}`, task.task);
             }
         });
 
