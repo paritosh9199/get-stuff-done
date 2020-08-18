@@ -12,12 +12,16 @@
     "bin": "./bin",
     "config": "./config"
   },
-  "main": "./bin/do.js",
+  "main": "./dist/app.js",
   "bin": {
-    "gdo": "./bin/do.js"
+    "gdo": "./dist/app.js"
   },
   "scripts": {
     "gdo": "gdo",
+    "compile": "tsc -b",
+    "watch": "tsc -w",
+    "lint": "eslint src/**/*.{js,ts}",
+    "lint:fix": "eslint src/**/*.{js,ts} --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Paritosh",
@@ -25,9 +29,19 @@
   "dependencies": {
     "clear": "^0.1.0",
     "fs": "0.0.1-security",
-    "log-symbols": "^3.0.0"
+    "log-symbols": "^3.0.0",
+    "path": "^0.12.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/clear": "^0.1.0",
+    "@types/node": "^14.6.0",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
+    "@typescript-eslint/parser": "^3.9.1",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "typescript": "^3.9.7"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/paritosh9199/get-stuff-done.git"
