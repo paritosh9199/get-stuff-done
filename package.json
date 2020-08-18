@@ -1,6 +1,6 @@
 {
   "name": "get-stuff-done",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple CLI based todo app for developers without any distractions!",
   "files": [
     "bin",
