@@ -1,6 +1,6 @@
 {
   "name": "get-stuff-done",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "A simple CLI based todo app for developers without any distractions!",
   "files": [
     "bin",
@@ -10,7 +10,7 @@
   "directories": {
     "lib": "./lib",
     "bin": "./bin",
-    "config":"./config"
+    "config": "./config"
   },
   "main": "./bin/do.js",
   "bin": {
