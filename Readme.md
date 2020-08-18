@@ -3,10 +3,10 @@
 Installation:  
 &nbsp;&nbsp;&nbsp;&nbsp;` npm install -g get-stuff-done` <br/>
 <br/>
-A Simple CLI based todo app without any distractions for devs!
+A Simple CLI based todo app to work without any distractions for devs!
 <br/>
 Usage:  
-&nbsp;&nbsp;&nbsp;&nbsp;`do <Action> <Task>`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;`gdo <Action> <Task>`<br/>
 <br/>
 `<Task>` is a task string.<br/>
 <br/>

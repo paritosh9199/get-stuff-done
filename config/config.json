@@ -1,0 +1,11 @@
+{
+  "test": {
+    "DB_PATH": "./db-test.json"
+  },
+  "development": {
+    "DB_PATH": "./db-dev.json"
+  },
+  "production": {
+    "DB_PATH": "./db.json"
+  }
+}
