@@ -3,14 +3,11 @@
   "version": "2.0.0",
   "description": "A simple CLI based todo app for developers without any distractions!",
   "files": [
-    "bin",
-    "lib",
-    "config"
+    "dist",
+    "src"
   ],
   "directories": {
-    "lib": "./lib",
-    "bin": "./bin",
-    "config": "./config"
+    "lib": "./dist/lib"
   },
   "main": "./dist/app.js",
   "bin": {
